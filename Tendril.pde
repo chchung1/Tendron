@@ -23,8 +23,8 @@ class Tendril
     if (myNumSegments <= 50/12) {
       strokeWeight(4);
       r = 255;
-      g = 97;
-      b = 109;
+      g = 143;
+      b = 152;
       o = 85;
     } else if (myNumSegments <= 50/6) {
       strokeWeight(4);
@@ -56,7 +56,7 @@ class Tendril
     endY = startY;
 
     for (int i = 0; i < myNumSegments; i++) {
-      stroke(r+i*2, g+i*3, b-i*6,o);
+      stroke(r+i*1, g+i*2, b-i*6,o);
       myAngle = myAngle + (Math.random()*0.4)-0.2;
       endX = startX + (float)(Math.cos(myAngle))*SEG_LENGTH; 
       endY = startY + (float)(Math.sin(myAngle))*SEG_LENGTH;
